@@ -3,8 +3,6 @@ import { ThemeProvider, createTheme, styled } from '@mui/material/styles';
 import { CssBaseline, Box } from '@mui/material';
 import { Theme } from '@radix-ui/themes';
 import HeroSection from '../components/HeroSection';
-import Navigation from '../components/Navigation';
-import FeaturesSection from '../components/FeaturesSection';
 
 // Create custom MUI theme with the specified background color
 const theme = createTheme({
@@ -17,12 +15,12 @@ const theme = createTheme({
       main: '#666666',
     },
     background: {
-      default: '#a6a6a6',
-      paper: '#a6a6a6',
+      default: '#ffffff',
+      paper: '#ffffff',
     },
     text: {
-      primary: '#ffffff',
-      secondary: '#f0f0f0',
+      primary: '#333333',
+      secondary: '#666666',
     },
   },
   typography: {
@@ -38,7 +36,7 @@ const theme = createTheme({
     MuiCssBaseline: {
       styleOverrides: {
         body: {
-          backgroundColor: '#a6a6a6',
+          backgroundColor: '#ffffff',
           margin: 0,
           padding: 0,
         },
@@ -48,7 +46,7 @@ const theme = createTheme({
 });
 
 const PageContainer = styled(Box)(() => ({
-  backgroundColor: '#a6a6a6',
+  backgroundColor: '#ffffff',
   minHeight: '100vh',
   width: '100%',
 }));
@@ -59,9 +57,7 @@ export const Home: React.FC = () => {
       <Theme>
         <CssBaseline />
         <PageContainer>
-          <Navigation />
           <HeroSection />
-          <FeaturesSection />
         </PageContainer>
       </Theme>
     </ThemeProvider>
