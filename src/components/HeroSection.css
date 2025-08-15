@@ -1,0 +1,288 @@
+
+.hero-container {
+	background-color: #ffffff;
+	min-height: 100vh;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	padding: 48px 32px;
+	padding-top: 10vh;
+}
+
+.hero-content {
+	text-align: center;
+	max-width: 900px;
+	padding: 48px;
+	background-color: #ffffff;
+	border-radius: 24px;
+}
+
+.logo-image {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 32px;
+}
+
+.main-description {
+	font-size: 1.3rem;
+	line-height: 1.7;
+	color: #333333;
+	margin-bottom: 24px;
+	font-weight: 400;
+}
+
+.about-section {
+	margin-top: 24px;
+	text-align: left;
+}
+
+.about-title {
+	font-size: 1.4rem;
+	margin: 0 0 8px 0;
+	color: #222222;
+}
+
+.about-text {
+	color: #444444;
+	line-height: 1.6;
+	margin: 0 0 12px 0;
+}
+
+.explain-section {
+	margin-top: 24px;
+	text-align: left;
+}
+
+.explain-title {
+	font-size: 1.4rem;
+	margin: 0 0 8px 0;
+	color: #222222;
+}
+
+.explain-text {
+	color: #444444;
+	line-height: 1.6;
+	margin: 0 0 12px 0;
+}
+
+.explain-list {
+	margin: 0 0 12px 0;
+	padding-left: 18px;
+}
+
+.explain-list li {
+	margin-bottom: 8px;
+}
+
+.get-section {
+	margin-top: 24px;
+	text-align: left;
+}
+
+.get-title {
+	font-size: 1.4rem;
+	margin: 0 0 8px 0;
+	color: #222222;
+}
+
+.get-list {
+	margin: 0 0 12px 0;
+	padding-left: 18px;
+}
+
+.get-list li {
+	margin-bottom: 6px;
+}
+
+.get-text {
+	color: #444444;
+	line-height: 1.6;
+}
+
+.images-section {
+	margin-top: 24px;
+	text-align: left;
+}
+
+.images-title {
+	font-size: 1.4rem;
+	margin: 0 0 8px 0;
+	color: #222222;
+}
+
+.images-text {
+	color: #444444;
+	line-height: 1.6;
+	margin: 0 0 8px 0;
+}
+
+.images-list {
+	margin: 0 0 12px 0;
+	padding-left: 18px;
+}
+
+.images-list li {
+	margin-bottom: 6px;
+}
+
+.spl-section {
+	margin-top: 24px;
+	text-align: left;
+}
+
+.spl-title {
+	font-size: 1.4rem;
+	margin: 0 0 8px 0;
+	color: #222222;
+}
+
+.spl-text {
+	color: #444444;
+	line-height: 1.6;
+	margin: 0 0 12px 0;
+}
+
+.fees-section {
+	margin-top: 24px;
+	text-align: left;
+}
+
+.fees-title {
+	font-size: 1.4rem;
+	margin: 0 0 8px 0;
+	color: #222222;
+}
+
+.fees-text {
+	color: #444444;
+	line-height: 1.6;
+	margin: 0 0 12px 0;
+}
+
+.details-section {
+	margin-top: 24px;
+	text-align: left;
+}
+
+.details-title {
+	font-size: 1.4rem;
+	margin: 0 0 8px 0;
+	color: #222222;
+}
+
+.details-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.details-list li {
+	margin-bottom: 12px;
+}
+
+.details-a {
+	color: #444444;
+	margin-top: 6px;
+}
+
+.historical-section {
+	margin-top: 24px;
+	text-align: left;
+}
+
+.historical-title {
+	font-size: 1.4rem;
+	margin: 0 0 8px 0;
+	color: #222222;
+}
+
+.historical-text {
+	color: #444444;
+	line-height: 1.6;
+	margin: 0 0 12px 0;
+}
+
+.token-section {
+	margin-top: 24px;
+	text-align: left;
+}
+
+.token-title {
+	font-size: 1.4rem;
+	margin: 0 0 8px 0;
+	color: #222222;
+}
+
+.token-list {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 8px 0;
+}
+
+.token-list li {
+	margin-bottom: 6px;
+	color: #333333;
+}
+
+.token-text {
+	color: #444444;
+	line-height: 1.6;
+	margin: 0 0 12px 0;
+}
+
+.staking-section {
+	margin-top: 24px;
+	text-align: left;
+}
+
+.staking-title {
+	font-size: 1.4rem;
+	margin: 0 0 8px 0;
+	color: #222222;
+}
+
+.staking-text {
+	color: #444444;
+	line-height: 1.6;
+	margin: 0 0 12px 0;
+}
+
+.staking-emission {
+	color: #333333;
+	margin: 0 0 8px 0;
+}
+
+.staking-process {
+	margin-top: 8px;
+}
+
+.staking-subtitle {
+	margin: 0 0 6px 0;
+	font-size: 1rem;
+	color: #333333;
+}
+
+.staking-list {
+	margin: 0;
+	padding-left: 18px;
+}
+
+.staking-list li {
+	margin-bottom: 6px;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 960px) {
+	.logo-image {
+		max-width: 80%;
+	}
+}
+
+@media (max-width: 600px) {
+	.logo-image {
+		max-width: 90%;
+	}
+	.main-description {
+		font-size: 1.1rem;
+	}
+}
