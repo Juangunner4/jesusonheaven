@@ -6,8 +6,6 @@ import ContractAddress from './ContractAddress';
 import About from './About';
 import Tokenomics from './Tokenomics';
 import Footer from './Footer';
-import tokenImage from '../assets/tokenImage.png';
-import heavendexLogo from '../assets/heavendexlogo.png';
 import './HeroSection.css';
 import './Layout.css';
 
@@ -42,7 +40,7 @@ export const HeroSection: React.FC = () => {
                                 }}
                             >
                                 <img
-                                    src={tokenImage}
+                                    src="/tokenImage.png"
                                     alt="$JESUS Token"
                                     style={{
                                         width: '120px',
@@ -124,7 +122,7 @@ export const HeroSection: React.FC = () => {
                                 }}
                             >
                                 <img
-                                    src={heavendexLogo}
+                                    src="/heavendexlogo.png"
                                     alt="HeavenDex"
                                     style={{
                                         width: '60px',

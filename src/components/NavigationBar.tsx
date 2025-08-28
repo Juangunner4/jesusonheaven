@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { AppBar, Toolbar, Box, Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import './Layout.css';
-import heavenLogo from '../assets/lightheaven.gif';
-import darkHeavenLogo from '../assets/darkheaven.gif';
 
 const StyledAppBar = styled(AppBar)(({ theme }) => ({
   backgroundColor: 'rgba(248, 217, 138, 0.9)',
@@ -57,7 +55,7 @@ export const NavigationBar: React.FC = () => {
         >
           {/* Light logo - always rendered */}
           <img 
-            src={heavenLogo}
+            src="/lightheaven.gif"
             alt="Heaven Logo Light" 
             className="heaven-logo"
             style={{ 
@@ -74,7 +72,7 @@ export const NavigationBar: React.FC = () => {
           />
           {/* Dark logo - always rendered */}
           <img 
-            src={darkHeavenLogo}
+            src="/darkheaven.gif"
             alt="Heaven Logo Dark" 
             className="heaven-logo"
             style={{ 
