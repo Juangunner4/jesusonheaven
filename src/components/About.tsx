@@ -4,13 +4,13 @@ import { styled } from '@mui/material/styles';
 
 const AboutContainer = styled(Box)(({ theme }) => ({
   backgroundColor: 'transparent',
-  padding: '80px 0',
+  padding: '40px 0',
   position: 'relative',
 }));
 
 const AboutContent = styled(Container)({
   backgroundColor: 'transparent',
-  padding: '40px',
+  padding: '20px',
   maxWidth: '1000px',
   margin: '0 auto',
 });

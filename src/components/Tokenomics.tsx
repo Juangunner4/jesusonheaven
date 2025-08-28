@@ -5,13 +5,13 @@ import { TrendingUp, Security, AccountBalance, Autorenew } from '@mui/icons-mate
 
 const TokenomicsContainer = styled(Box)(({ theme }) => ({
   backgroundColor: 'transparent',
-  padding: '80px 0',
+  padding: '16px 0 40px 0',
   position: 'relative',
 }));
 
 const TokenomicsContent = styled(Container)({
   backgroundColor: 'transparent',
-  padding: '40px',
+  padding: '20px',
   maxWidth: '1200px',
   margin: '0 auto',
 });

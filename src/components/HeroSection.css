@@ -5,8 +5,8 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 48px 32px;
-	padding-top: calc(64px + 48px); /* Account for sticky navbar + padding */
+	padding: 24px 16px;
+	padding-top: calc(64px + 24px); /* Account for sticky navbar + reduced padding */
 	position: relative;
 	overflow-x: hidden;
 	width: 100%;
@@ -16,7 +16,7 @@
 .hero-content {
 	text-align: center;
 	max-width: 1000px;
-	padding: 64px 48px;
+	padding: 32px 24px;
 	background: transparent;
 	border-radius: 32px;
 	position: relative;

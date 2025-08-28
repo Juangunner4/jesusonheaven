@@ -9,8 +9,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* Use public path so Create React App serves the file correctly */
-  background-image: url('/backgroundheaven.svg');
+  /* Use relative path from src to assets folder */
+  background-image: url('./assets/backgroundheaven.svg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

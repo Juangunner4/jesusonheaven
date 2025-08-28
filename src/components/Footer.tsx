@@ -7,7 +7,7 @@ const FooterContainer = styled(Box)(({ theme }) => ({
   backgroundColor: 'rgba(248, 217, 138, 0.95)',
   backdropFilter: 'blur(10px)',
   borderTop: '1px solid rgba(0, 0, 0, 0.1)',
-  padding: '32px 0',
+  padding: '24px 0',
   marginTop: 'auto',
 }));
 
