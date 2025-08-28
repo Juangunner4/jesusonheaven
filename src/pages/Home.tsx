@@ -35,18 +35,14 @@ const theme = createTheme({
   components: {
     MuiCssBaseline: {
       styleOverrides: {
-        body: {
-          backgroundColor: '#ffffff',
-          margin: 0,
-          padding: 0,
-        },
+    // body styles intentionally left to global CSS to allow background image
       },
     },
   },
 });
 
 const PageContainer = styled(Box)(() => ({
-  backgroundColor: '#ffffff',
+  backgroundColor: 'transparent',
   minHeight: '100vh',
   width: '100%',
 }));
