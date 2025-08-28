@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  height: 100%;
   overflow-x: hidden;
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,7 +12,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* Use SVG background by default. If the browser cannot render SVG or the
      variable is unset, fall back to the PNG version. */
-  background-image: var(--background-heaven, url('/backgroundheaven.svg')), url('/backgroundheaven.png');
+  background-image: var(--background-heaven);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -23,6 +24,7 @@ html {
   width: 100%;
   overflow-x: hidden;
   box-sizing: border-box;
+  height: 100%;
 }
 
 *, *::before, *::after {
@@ -35,10 +37,41 @@ code {
 }
 
 /* Mobile optimization for background */
-@media (max-width: 700px) {
+@media (max-width: 768px) {
+  html, body {
+    height: 100%;
+    min-height: 100vh;
+  }
+  
   body {
     background-attachment: scroll; /* Better performance on mobile */
     background-size: cover; /* Fill the viewport to avoid blank areas */
-    background-position: top center; /* Keep image anchored at the top */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat;
+    /* Ensure background extends beyond viewport height */
+    min-height: 100vh;
+    height: 100%;
+  }
+  
+  /* Ensure the App container also extends the full height */
+  .App {
+    min-height: 100vh;
+    height: 100%;
+    background: transparent;
+  }
+}
+
+/* Fallback for very small screens */
+@media (max-width: 480px) {
+  body {
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    height: 100%;
+  }
+  
+  .App {
+    min-height: 100vh;
+    height: 100%;
   }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Home from './pages/Home';
+import backgroundHeavenSvg from './assets/backgroundheaven.svg';
 
 function App() {
   React.useEffect(() => {
@@ -9,7 +10,7 @@ function App() {
     // the public directory as a fallback handled in CSS.
     document.documentElement.style.setProperty(
       '--background-heaven',
-      "url('/backgroundheaven.svg')",
+      `url(${backgroundHeavenSvg})`,
     );
   }, []);
 

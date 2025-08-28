@@ -1,11 +1,22 @@
 .App {
   background: transparent;
   min-height: 100vh;
+  height: 100%;
   margin: 0;
   padding: 0;
   width: 100%;
   overflow-x: hidden;
   box-sizing: border-box;
+}
+
+/* Mobile-specific styles for App container */
+@media (max-width: 768px) {
+  .App {
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    background: transparent;
+  }
 }
 
 .App-logo {

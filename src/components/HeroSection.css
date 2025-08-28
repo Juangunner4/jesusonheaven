@@ -40,6 +40,9 @@
 		min-height: 100vh;
 		width: 100%;
 		overflow-x: hidden;
+		/* Ensure background extends properly on mobile */
+		background: transparent;
+		position: relative;
 	}
 	
 	.hero-content {
@@ -49,6 +52,9 @@
 		max-width: 100%;
 		margin: 0 auto;
 		box-sizing: border-box;
+		background: transparent;
+		position: relative;
+		z-index: 1;
 	}
 	
 	.hero-title {
@@ -308,5 +314,40 @@
 @media (max-width: 600px) {
         .main-description {
                 font-size: 1.1rem;
+        }
+        
+        .hero-container {
+                padding: 16px 12px;
+                padding-top: calc(64px + 16px);
+                min-height: 100vh;
+        }
+        
+        .hero-content {
+                padding: 24px 16px;
+                border-radius: 16px;
+        }
+        
+        .hero-title {
+                font-size: 2rem;
+        }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+        .hero-container {
+                padding: 12px 8px;
+                padding-top: calc(64px + 12px);
+        }
+        
+        .hero-content {
+                padding: 20px 12px;
+        }
+        
+        .hero-title {
+                font-size: 1.75rem;
+        }
+        
+        .main-description {
+                font-size: 1rem;
         }
 }

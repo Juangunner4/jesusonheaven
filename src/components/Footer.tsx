@@ -4,7 +4,7 @@ import { styled } from '@mui/material/styles';
 import { OpenInNew } from '@mui/icons-material';
 
 const FooterContainer = styled(Box)(({ theme }) => ({
-  backgroundColor: 'rgba(248, 217, 138, 0.95)',
+  backgroundColor: 'transparent',
   backdropFilter: 'blur(10px)',
   borderTop: '1px solid rgba(0, 0, 0, 0.1)',
   padding: '24px 0',

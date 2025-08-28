@@ -44,6 +44,7 @@ const theme = createTheme({
 const PageContainer = styled(Box)(() => ({
   backgroundColor: 'transparent',
   minHeight: '100vh',
+  height: '100%',
   width: '100%',
 }));
 
