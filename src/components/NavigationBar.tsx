@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { AppBar, Toolbar, Box, Button } from '@mui/material';
+import { AppBar, Toolbar, Box, Button, IconButton, Drawer, List, ListItem, ListItemButton, ListItemText } from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import { styled } from '@mui/material/styles';
 import './Layout.css';
 
@@ -45,14 +47,20 @@ const LogoContainer = styled(Box)({
 export const NavigationBar: React.FC = () => {
   const navItems = ['Home', 'About', 'Tokenomics', 'Roadmap'];
   const [isLogoHovered, setIsLogoHovered] = useState(false);
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const isMobile = useMediaQuery('(max-width:700px)');
+
+  const toggleDrawer = (open: boolean) => () => {
+    setDrawerOpen(open);
+  };
 
   return (
     <StyledAppBar position="sticky" elevation={0} className="navigation-bar">
-      <Toolbar sx={{ justifyContent: 'center', minHeight: '64px', position: 'relative' }}>
-        <LogoContainer
-          onMouseEnter={() => setIsLogoHovered(true)}
-          onMouseLeave={() => setIsLogoHovered(false)}
-        >
+        <Toolbar sx={{ justifyContent: 'center', minHeight: '64px', position: 'relative' }}>
+          <LogoContainer
+            onMouseEnter={() => setIsLogoHovered(true)}
+            onMouseLeave={() => setIsLogoHovered(false)}
+          >
           {/* Light logo - always rendered */}
           <img 
             src="/lightheaven.gif"
@@ -89,16 +97,53 @@ export const NavigationBar: React.FC = () => {
           />
         </LogoContainer>
         
-        <Box sx={{ display: 'flex', gap: 2 }}>
-          {navItems.map((item) => (
-            <NavButton key={item} href={`#${item.toLowerCase()}`}>
-              {item}
-            </NavButton>
-          ))}
-        </Box>
-      </Toolbar>
-    </StyledAppBar>
-  );
-};
+          {isMobile ? (
+            <>
+              <IconButton
+                edge="end"
+                color="inherit"
+                aria-label="menu"
+                onClick={toggleDrawer(true)}
+                sx={{
+                  position: 'absolute',
+                  right: '24px',
+                  top: '50%',
+                  transform: 'translateY(-50%)'
+                }}
+              >
+                <MenuIcon />
+              </IconButton>
+              <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer(false)}>
+                <Box
+                  sx={{ width: 250 }}
+                  role="presentation"
+                  onClick={toggleDrawer(false)}
+                  onKeyDown={toggleDrawer(false)}
+                >
+                  <List>
+                    {navItems.map((item) => (
+                      <ListItem disablePadding key={item}>
+                        <ListItemButton component="a" href={`#${item.toLowerCase()}`}>
+                          <ListItemText primary={item} />
+                        </ListItemButton>
+                      </ListItem>
+                    ))}
+                  </List>
+                </Box>
+              </Drawer>
+            </>
+          ) : (
+            <Box sx={{ display: 'flex', gap: 2 }}>
+              {navItems.map((item) => (
+                <NavButton key={item} href={`#${item.toLowerCase()}`}>
+                  {item}
+                </NavButton>
+              ))}
+            </Box>
+          )}
+        </Toolbar>
+      </StyledAppBar>
+    );
+  };
 
 export default NavigationBar;

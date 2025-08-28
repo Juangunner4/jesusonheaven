@@ -33,8 +33,10 @@ code {
 }
 
 /* Mobile optimization for background */
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   body {
     background-attachment: scroll; /* Better performance on mobile */
+    background-size: contain; /* Ensure full image is visible on small screens */
+    background-position: top center; /* Keep image anchored at the top */
   }
 }
