@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Home from './pages/Home';
-import backgroundHeaven from './assets/backgroundheaven.svg';
+import backgroundHeaven from './assets/backgroundheaven.png';
 
 function App() {
   React.useEffect(() => {
