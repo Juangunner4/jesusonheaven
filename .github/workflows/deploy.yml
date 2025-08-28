@@ -31,7 +31,7 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./build/
-          server-dir: /home1/juangunner4/public_html/website_317ef302
+          server-dir: /home1/juangunner4/public_html/website_317ef302/
           protocol: ftps
           port: 21
 

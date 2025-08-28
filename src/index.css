@@ -9,7 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('/backgroundheaven.svg');
+  background-image: url('./assets/backgroundheaven.svg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
