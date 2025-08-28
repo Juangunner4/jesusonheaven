@@ -9,7 +9,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: var(--background-heaven, none);
+  /* Use SVG background by default. If the browser cannot render SVG or the
+     variable is unset, fall back to the PNG version. */
+  background-image: var(--background-heaven, url('/backgroundheaven.svg')), url('/backgroundheaven.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -36,7 +38,7 @@ code {
 @media (max-width: 700px) {
   body {
     background-attachment: scroll; /* Better performance on mobile */
-    background-size: contain; /* Ensure full image is visible on small screens */
+    background-size: cover; /* Fill the viewport to avoid blank areas */
     background-position: top center; /* Keep image anchored at the top */
   }
 }

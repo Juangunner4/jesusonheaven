@@ -4,7 +4,13 @@ import Home from './pages/Home';
 
 function App() {
   React.useEffect(() => {
-    document.documentElement.style.setProperty('--background-heaven', 'url(/backgroundheaven.png)');
+    // Use scalable SVG by default for crisper rendering and ensure
+    // background is large enough across all sections. PNG remains in
+    // the public directory as a fallback handled in CSS.
+    document.documentElement.style.setProperty(
+      '--background-heaven',
+      "url('/backgroundheaven.svg')",
+    );
   }, []);
 
   return (
