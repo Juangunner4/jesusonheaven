@@ -1,8 +1,11 @@
 .App {
-  background-color: #ffffff;
+  background: transparent;
   min-height: 100vh;
   margin: 0;
   padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .App-logo {

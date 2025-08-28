@@ -1,0 +1,56 @@
+/* Navigation Bar Styles */
+.navigation-bar {
+  position: sticky;
+  top: 0;
+  z-index: 1100;
+  backdrop-filter: blur(10px);
+}
+
+/* Contract Address Styles */
+.contract-address-container {
+  transition: all 0.3s ease;
+}
+
+.contract-address-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Animation for copy button */
+@keyframes copySuccess {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.copy-success {
+  animation: copySuccess 0.3s ease;
+}
+
+/* Logo animation */
+@keyframes logoFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+}
+
+.heaven-logo {
+  animation: logoFloat 3s ease-in-out infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .navigation-bar .MuiToolbar-root {
+    padding: 0 8px;
+  }
+  
+  .navigation-bar .MuiButton-root {
+    padding: 6px 12px;
+    font-size: 0.875rem;
+  }
+  
+  .heaven-logo {
+    height: 24px !important;
+    top: 12px !important;
+    left: 16px !important;
+  }
+}
