@@ -122,7 +122,6 @@ export const NavigationBar: React.FC = () => {
                     WebkitBackdropFilter: 'blur(15px)',
                     height: '100%'
                   }}
-                  role="presentation"
                   onClick={toggleDrawer(false)}
                   onKeyDown={toggleDrawer(false)}
                 >
