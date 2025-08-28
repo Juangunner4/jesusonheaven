@@ -115,7 +115,13 @@ export const NavigationBar: React.FC = () => {
               </IconButton>
               <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer(false)}>
                 <Box
-                  sx={{ width: 250 }}
+                  sx={{ 
+                    width: 250,
+                    backgroundColor: 'rgba(248, 217, 138, 0.9)',
+                    backdropFilter: 'blur(15px)',
+                    WebkitBackdropFilter: 'blur(15px)',
+                    height: '100%'
+                  }}
                   role="presentation"
                   onClick={toggleDrawer(false)}
                   onKeyDown={toggleDrawer(false)}
