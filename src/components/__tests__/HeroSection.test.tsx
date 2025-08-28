@@ -16,14 +16,14 @@ const renderWithTheme = (component: React.ReactElement) => {
 describe('HeroSection', () => {
   test('renders hero title', () => {
     renderWithTheme(<HeroSection />);
-    const titleElement = screen.getByText(/Welcome to PumpFun Punks/i);
+    const titleElement = screen.getByText(/Welcome to Jesus on Heaven/i);
     expect(titleElement).toBeInTheDocument();
   });
 
-  test('renders hero subtitle', () => {
+  test('renders hero description', () => {
     renderWithTheme(<HeroSection />);
-    const subtitleElement = screen.getByText(/Discover the most exclusive NFT collection/i);
-    expect(subtitleElement).toBeInTheDocument();
+    const descriptionElement = screen.getByText(/lighthearted memecoin/i);
+    expect(descriptionElement).toBeInTheDocument();
   });
 
   test('renders explore collection button', () => {
