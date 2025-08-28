@@ -1,11 +1,10 @@
 import React from 'react';
 import './App.css';
 import Home from './pages/Home';
-import backgroundHeaven from './assets/backgroundheaven.png';
 
 function App() {
   React.useEffect(() => {
-    document.documentElement.style.setProperty('--background-heaven', `url(${backgroundHeaven})`);
+    document.documentElement.style.setProperty('--background-heaven', 'url(/backgroundheaven.png)');
   }, []);
 
   return (
