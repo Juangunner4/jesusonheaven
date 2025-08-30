@@ -5,6 +5,7 @@ import NavigationBar from './NavigationBar';
 import ContractAddress from './ContractAddress';
 import About from './About';
 import Tokenomics from './Tokenomics';
+import Roadmap from './Roadmap';
 import Footer from './Footer';
 import './HeroSection.css';
 import './Layout.css';
@@ -191,7 +192,10 @@ export const HeroSection: React.FC = () => {
             
             {/* Tokenomics Section */}
             <Tokenomics />
-            
+
+            {/* Roadmap Section */}
+            <Roadmap />
+
             {/* Footer */}
             <Footer />
         </>
