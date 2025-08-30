@@ -130,7 +130,7 @@ export const Tokenomics: React.FC = () => {
               <CardContent>
                 <MetricTitle>Platform</MetricTitle>
                 <MetricValue>Solana</MetricValue>
-                <MetricSubtext>Heaven DEX</MetricSubtext>
+                <MetricSubtext>DEX</MetricSubtext>
               </CardContent>
             </MetricCard>
           </Box>
@@ -172,25 +172,25 @@ export const Tokenomics: React.FC = () => {
             Unique Narrative
           </FeatureTitle>
           <FeatureText>
-            $JESUS is branded as the first $JESUS on Heaven DEX, with fees managed by a flywheel-funded DexVault 
+            $JESUS is branded as the first $JESUS on a DEX, with fees managed by a flywheel-funded DexVault
             that supports giving back to charities selected by the community.
           </FeatureText>
           <Box sx={{ marginTop: '12px' }}>
-            <HighlightChip label="First $JESUS on Heaven" />
+            <HighlightChip label="First $JESUS on DEX" />
             <HighlightChip label="Community Charity Support" />
             <HighlightChip label="DexVault Managed" />
           </Box>
         </FeatureBox>
 
-        <SubsectionTitle>Heaven DEX & The God Flywheel</SubsectionTitle>
+        <SubsectionTitle>DEX & Token Flywheel</SubsectionTitle>
         
         <FeatureBox>
           <FeatureTitle>
             <AccountBalance />
-            What is Heaven DEX?
+            What is this DEX?
           </FeatureTitle>
           <FeatureText>
-            Heaven is a Solana-native decentralized exchange and launchpad with fully integrated AMM infrastructure. 
+            This platform is a Solana-native decentralized exchange and launchpad with fully integrated AMM infrastructure.
             It allows anyone to launch a token on-chain within seconds—without bonding curves or cumbersome migration 
             steps—and ensures fair, permissionless trading and token creation.
           </FeatureText>
@@ -199,19 +199,18 @@ export const Tokenomics: React.FC = () => {
         <FeatureBox>
           <FeatureTitle>
             <Autorenew />
-            The "God Flywheel" Mechanism
+            Token Buyback Mechanism
           </FeatureTitle>
           <FeatureText>
-            100% of protocol trading fees are automatically channeled into buying back and burning the native token, $LIGHT. 
-            This builds a deflationary engine that perpetually aligns token value with platform usage.
+            A portion of protocol trading fees can be automatically channeled into buying back and burning the native token,
+            building a deflationary engine that aligns token value with platform usage.
           </FeatureText>
           <FeatureText>
-            <strong>Automated Process:</strong> Buybacks and burns occur programmatically every five seconds, 
+            <strong>Automated Process:</strong> Buybacks and burns may occur programmatically,
             reinforcing continuous deflation as trading volume increases.
           </FeatureText>
           <FeatureText>
-            <strong>Early Success:</strong> During launch phase, $1.4 million worth of LIGHT was bought back and 
-            burned within just three days, equating to around 2% of total supply destroyed in the first week.
+            <strong>Example Metrics:</strong> Placeholder figures about token burn and supply reduction can be highlighted here.
           </FeatureText>
         </FeatureBox>
 
@@ -239,7 +238,7 @@ export const Tokenomics: React.FC = () => {
             Why It Matters for $JESUS Holders
           </FeatureTitle>
           <FeatureText>
-            Every dollar of revenue on Heaven supports the native token ecosystem with automated deflation, 
+            Every dollar of revenue on the platform supports the native token ecosystem with automated deflation,
             while protections like sniper taxes and tiered fees ensure fairer launch conditions and revenue integrity.
           </FeatureText>
           <FeatureText>

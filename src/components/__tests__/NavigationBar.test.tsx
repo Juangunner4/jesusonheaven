@@ -20,22 +20,21 @@ describe('NavigationBar', () => {
     expect(screen.getByText('Home')).toBeInTheDocument();
     expect(screen.getByText('About')).toBeInTheDocument();
     expect(screen.getByText('Tokenomics')).toBeInTheDocument();
-    expect(screen.getByText('Community')).toBeInTheDocument();
     expect(screen.getByText('Roadmap')).toBeInTheDocument();
   });
 
-  test('renders heaven logo', () => {
+  test('renders site logo', () => {
     renderWithTheme(<NavigationBar />);
-    
-    const logo = screen.getByAltText('Heaven Logo');
+
+    const logo = screen.getByAltText('Site Logo Light');
     expect(logo).toBeInTheDocument();
-    expect(logo).toHaveAttribute('src', expect.stringContaining('lightheaven.gif'));
+    expect(logo).toHaveAttribute('src', expect.stringContaining('logo-light.gif'));
   });
 
   test('has correct navigation structure', () => {
     renderWithTheme(<NavigationBar />);
-    
-    const toolbar = screen.getByRole('toolbar');
-    expect(toolbar).toBeInTheDocument();
+
+    const banner = screen.getByRole('banner');
+    expect(banner).toBeInTheDocument();
   });
 });

@@ -23,7 +23,7 @@ describe('About', () => {
   test('renders launch information', () => {
     renderWithTheme(<About />);
     
-    expect(screen.getByText('$JESUS was launched on 23:21:54 Aug 21, 2025')).toBeInTheDocument();
+    expect(screen.getByText('$JESUS was launched on 23:21:54 Aug 21, 2025 on Example DEX')).toBeInTheDocument();
   });
 
   test('renders introduction text', () => {

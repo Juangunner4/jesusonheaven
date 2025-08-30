@@ -53,8 +53,8 @@ interface ContractAddressProps {
   address?: string;
 }
 
-export const ContractAddress: React.FC<ContractAddressProps> = ({ 
-  address = "2nmowg87Jbo55Uc3yWaeeSZ6DnDBhpoVMiQKMdKfv777" 
+export const ContractAddress: React.FC<ContractAddressProps> = ({
+  address = "CONTRACT_ADDRESS_PLACEHOLDER"
 }) => {
   const [copied, setCopied] = useState(false);
   const [snackbarOpen, setSnackbarOpen] = useState(false);

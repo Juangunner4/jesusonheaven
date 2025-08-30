@@ -40,8 +40,8 @@ export const HeroSection: React.FC = () => {
                                 }}
                             >
                                 <img
-                                    src="/tokenImage.png"
-                                    alt="$JESUS Token"
+                                    src="/token-logo.png"
+                                    alt="Token Logo"
                                     style={{
                                         width: '120px',
                                         height: '120px',
@@ -92,10 +92,10 @@ export const HeroSection: React.FC = () => {
                             <ContractAddress />
                         </Box>
 
-                        {/* Floating Logos Section */}
-                        <Box 
-                            sx={{ 
-                                marginTop: 3, 
+                        {/* Placeholder for exchange logos */}
+                        <Box
+                            sx={{
+                                marginTop: 3,
                                 marginBottom: 4,
                                 display: 'flex',
                                 justifyContent: 'center',
@@ -105,9 +105,7 @@ export const HeroSection: React.FC = () => {
                         >
                             <Box
                                 component={Link}
-                                href="https://heaven.xyz/token/GWnVxSXKRQvHBXeo9dcZBM82EKLv5bCwPGKPEvGSPPxw"
-                                target="_blank"
-                                rel="noopener noreferrer"
+                                href="#"
                                 sx={{
                                     display: 'inline-block',
                                     animation: 'logoFloat 4s ease-in-out infinite',
@@ -122,8 +120,8 @@ export const HeroSection: React.FC = () => {
                                 }}
                             >
                                 <img
-                                    src="/heavendexlogo.png"
-                                    alt="HeavenDex"
+                                    src="/dex-logo.png"
+                                    alt="DEX Logo"
                                     style={{
                                         width: '60px',
                                         height: '60px',

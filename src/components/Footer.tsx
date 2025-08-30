@@ -51,8 +51,8 @@ interface FooterProps {
   contractAddress?: string;
 }
 
-export const Footer: React.FC<FooterProps> = ({ 
-  contractAddress = "2nmowg87Jbo55Uc3yWaeeSZ6DnDBhpoVMiQKMdKfv777" 
+export const Footer: React.FC<FooterProps> = ({
+  contractAddress = "CONTRACT_ADDRESS_PLACEHOLDER"
 }) => {
   const solscanUrl = `https://solscan.io/token/${contractAddress}`;
 

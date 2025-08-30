@@ -33,7 +33,7 @@
   50% { transform: translateY(-5px); }
 }
 
-.heaven-logo {
+.site-logo {
   animation: logoFloat 3s ease-in-out infinite;
 }
 
@@ -48,7 +48,7 @@
     font-size: 0.875rem;
   }
   
-  .heaven-logo {
+  .site-logo {
     height: 24px !important;
     top: 12px !important;
     left: 16px !important;

@@ -62,11 +62,11 @@ export const NavigationBar: React.FC = () => {
             onMouseLeave={() => setIsLogoHovered(false)}
           >
           {/* Light logo - always rendered */}
-          <img 
-            src="/lightheaven.gif"
-            alt="Heaven Logo Light" 
-            className="heaven-logo"
-            style={{ 
+          <img
+            src="/logo-light.gif"
+            alt="Site Logo Light"
+            className="site-logo"
+            style={{
               position: 'absolute',
               top: 0,
               left: 0,
@@ -79,11 +79,11 @@ export const NavigationBar: React.FC = () => {
             }} 
           />
           {/* Dark logo - always rendered */}
-          <img 
-            src="/darkheaven.gif"
-            alt="Heaven Logo Dark" 
-            className="heaven-logo"
-            style={{ 
+          <img
+            src="/logo-dark.gif"
+            alt="Site Logo Dark"
+            className="site-logo"
+            style={{
               position: 'absolute',
               top: 0,
               left: 0,

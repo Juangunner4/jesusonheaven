@@ -35,7 +35,7 @@ describe('ContractAddress', () => {
   test('displays default contract address', () => {
     renderWithTheme(<ContractAddress />);
     
-    expect(screen.getByText('2nmowg87Jbo55Uc3yWaeeSZ6DnDBhpoVMiQKMdKfv777')).toBeInTheDocument();
+    expect(screen.getByText('CONTRACT_ADDRESS_PLACEHOLDER')).toBeInTheDocument();
   });
 
   test('displays custom contract address when provided', () => {
@@ -52,7 +52,7 @@ describe('ContractAddress', () => {
     fireEvent.click(copyButton);
     
     await waitFor(() => {
-      expect(navigator.clipboard.writeText).toHaveBeenCalledWith('2nmowg87Jbo55Uc3yWaeeSZ6DnDBhpoVMiQKMdKfv777');
+      expect(navigator.clipboard.writeText).toHaveBeenCalledWith('CONTRACT_ADDRESS_PLACEHOLDER');
     });
   });
 

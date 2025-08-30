@@ -95,7 +95,7 @@ export const About: React.FC = () => {
         
         <Box sx={{ textAlign: 'center', marginBottom: '40px' }}>
           <LaunchInfo>
-            $JESUS was launched on 23:21:54 Aug 21, 2025 on HeavenDex
+            $JESUS was launched on 23:21:54 Aug 21, 2025 on Example DEX
           </LaunchInfo>
         </Box>
         
