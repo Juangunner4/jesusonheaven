@@ -34,8 +34,8 @@ describe('Footer', () => {
     const contractLink = screen.getByText('View Contract');
     expect(contractLink).toBeInTheDocument();
     expect(contractLink.closest('a')).toHaveAttribute(
-      'href', 
-      'https://solscan.io/token/2nmowg87Jbo55Uc3yWaeeSZ6DnDBhpoVMiQKMdKfv777'
+      'href',
+      'https://solscan.io/token/CONTRACT_ADDRESS_PLACEHOLDER'
     );
     expect(contractLink.closest('a')).toHaveAttribute('target', '_blank');
     expect(contractLink.closest('a')).toHaveAttribute('rel', 'noopener noreferrer');

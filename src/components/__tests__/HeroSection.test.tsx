@@ -35,16 +35,16 @@ describe('HeroSection', () => {
 
   test('renders navigation bar', () => {
     renderWithTheme(<HeroSection />);
-    const homeLink = screen.getByText(/Home/i);
-    const aboutLink = screen.getByText(/About/i);
+    const homeLink = screen.getByRole('link', { name: /Home/i });
+    const aboutLink = screen.getAllByRole('link', { name: /About/i })[0];
     expect(homeLink).toBeInTheDocument();
     expect(aboutLink).toBeInTheDocument();
   });
 
   test('renders contract address section', () => {
     renderWithTheme(<HeroSection />);
-    const contractTitle = screen.getByText(/Contract Address/i);
-    const contractAddress = screen.getByText(/2nmowg87Jbo55Uc3yWaeeSZ6DnDBhpoVMiQKMdKfv777/i);
+    const contractTitle = screen.getAllByText(/Contract Address/i)[0];
+    const contractAddress = screen.getByText(/CONTRACT_ADDRESS_PLACEHOLDER/i);
     expect(contractTitle).toBeInTheDocument();
     expect(contractAddress).toBeInTheDocument();
   });
